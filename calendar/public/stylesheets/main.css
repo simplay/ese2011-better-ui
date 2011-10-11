@@ -6,6 +6,20 @@ li {
   list-style-type: disc;
 }
 
+body{ 
+background-color:#FFFFCC;
+margin-left:100px; }
+*{ color:blue;
+}
+
+p,li{ 
+	font-size:100%;
+    line-height:100%;
+    font-family:Helvetica,Arial,sans-serif;
+    letter-spacing:0.2em;
+    word-spacing:0.1em; 
+}
+
 table#calendar {
   width: 80%;
   table-layout: fixed;

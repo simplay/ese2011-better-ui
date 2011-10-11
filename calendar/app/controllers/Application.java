@@ -25,12 +25,12 @@ public class Application extends Controller {
         render(users,me,s_date);
     }
     
-    public static void showMe(){
+    public static void showMe(String s_date){
     	User me = Database.users.get(Security.connected());
         List<User> users = Database.getUserList();
         Calendar defaultCalendar = me.getdefaultCalendar();
         LinkedList<Calendar> calendars = me.getCalendars();
-        render(me, users, calendars, defaultCalendar);
+        render(me, users, calendars, defaultCalendar, s_date);
     }
     
     

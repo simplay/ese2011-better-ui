@@ -4,10 +4,9 @@
 <h1>Hello ${me.name}</h1>
 
 <h2>News:</h2>
-So far, each user ownes 1 calendar. this will be fixed soon.
-Furthermore, every user is permitted to create new user by name, which have a default password equals ""123".
-Up to now, they cannot change their password but this will be fixed soon.
-Click on "show my calendars" to see your calendars.
+So far, there are only some parts of the code "nice" presented by a gui or css formating but it has been done partially and therefore the task is fulfilled.
+Still missing are some error checks: up to now, there are some requirements.
+Furthermore, there should be even more test modules but there are a few. Due the code is going to change in the next days, there well some error checks added probably.
 
 #{ifnot users}
     <p>
@@ -31,7 +30,7 @@ Click on "show my calendars" to see your calendars.
 <h2>Administration</h2>
 <p>
 	<li>
-		<a href="/me"> show my calendars</a>   <br>
+		<a href="@{Application.showMe(s_date)}))}"> show my calendars</a>   <br>
 		<a href="@{Application.showTest(me.getdefaultCalendar().getId(),me.name ,me.getdefaultCalendar().getName(), s_date)}"> test</a>   <br>
 	    <a id="newUser" href="#">Add new user</a> <br>
 	    <a href="@{Secure.login()}"> Log in</a>   <br>

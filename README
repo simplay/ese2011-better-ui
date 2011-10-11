@@ -1,0 +1,3 @@
+So far, there are only some parts of the code "nice" presented by a gui or css formating but it has been done partially and therefore the task is fulfilled.
+Still missing are some error checks: up to now, there are some requirements.
+Furthermore, there should be even more test modules but there are a few. Due the code is going to change in the next days, there well some error checks added probably.

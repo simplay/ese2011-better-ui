@@ -6,6 +6,9 @@
 	If you dont care about the format, a default date will be taken! </p>
 	${calendarID}
 	<form action="@{Application.saveEditedEvent()}" method="GET">
+	#{ifErrors}
+   <h1>Oops…</h1>
+#{/ifErrors}
 		<ul>
 			<input type="hidden" name="eventID" value="${eventID}" />
 			<input type="hidden" name="calendarID" value="${calendarID}" />
